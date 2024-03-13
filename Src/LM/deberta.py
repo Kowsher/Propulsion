@@ -1282,7 +1282,7 @@ class DebertaV2LMPredictionHead(nn.Module):
         self.decoder.bias = self.bias
 
     def forward(self, hidden_states):
-        push_decoder = torch.pow(self.propulsion_dense, self.degree).to(hidden_states.device)
+        push_decoder = torch.pow(self.propulsion_decoder, self.degree).to(hidden_states.device)
         hidden_states = self.transform(hidden_states)
         hidden_states = self.decoder(hidden_states) * push_decoder
         return hidden_states
