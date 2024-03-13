@@ -942,7 +942,7 @@ class DebertaV2Embeddings(nn.Module):
         if self.embedding_size != self.config.hidden_size:
             push_embed_proj = torch.pow(self.propulsion_embed_proj, self.degree).to(embeddings.device)
 
-            embeddings = self.embed_proj(embeddings)
+            embeddings = self.embed_proj(embeddings) * push_embed_proj
 
         embeddings = self.LayerNorm(embeddings)
 
