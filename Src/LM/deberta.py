@@ -450,7 +450,7 @@ class DebertaV2Encoder(nn.Module):
                 pos_ebd_size = self.position_buckets * 2
 
             self.rel_embeddings = nn.Embedding(pos_ebd_size, config.hidden_size)
-            #self.propulsion_rel_embeddings = nn.Parameter(torch.ones(config.hidden_size))
+            self.propulsion_rel_embeddings = nn.Parameter(torch.ones(config.hidden_size))
 
 
         self.norm_rel_ebd = [x.strip() for x in getattr(config, "norm_rel_ebd", "none").lower().split("|")]
@@ -513,8 +513,8 @@ class DebertaV2Encoder(nn.Module):
         else:
             next_kv = hidden_states
             
-        #push_rel_embeddings = torch.pow(self.propulsion_rel_embeddings, self.degree).to(hidden_states.device)
-        rel_embeddings = self.get_rel_embedding()
+        push_rel_embeddings = torch.pow(self.propulsion_rel_embeddings.unsqueeze(0), self.degree).to(hidden_states.device)
+        rel_embeddings = self.get_rel_embedding()* push_rel_embeddings
         output_states = next_kv
         for i, layer_module in enumerate(self.layer):
             if output_hidden_states:
