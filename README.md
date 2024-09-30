@@ -15,7 +15,7 @@
 
 <p align="center">
 
-<img src="./figures/propulsion_compare.png" width="370">
+<img src="./figures/propulsion_compare.png" width="770">
 
 </p>
 
@@ -39,7 +39,7 @@
 
 <p align="center">
 
-<img src="./figures/propulsion_method.png" width="770">
+<img src="./figures/propulsion_method.png" width="270">
 
 </p>
 ## Requirements
