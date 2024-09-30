@@ -7,7 +7,7 @@
 
 <div align="center">
 
-**[<a href="https://arxiv.org/abs/2409.10927">Paper Page</a>]**
+**[<a href="https://arxiv.org/abs/2409.10927">Paper</a>]**
 **[<a href="https://github.com/Kowsher/Propulsion">Code</a>]**
 
 
@@ -15,7 +15,7 @@
 
 <p align="center">
 
-<img src="./figures/logo.png" width="70">
+<img src="./figures/propulsion_compare.png" width="70">
 
 </p>
 
