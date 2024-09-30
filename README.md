@@ -15,7 +15,7 @@
 
 <p align="center">
 
-<img src="./figures/propulsion_compare.png" width="70">
+<img src="./figures/propulsion_compare.png" width="670">
 
 </p>
 
