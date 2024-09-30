@@ -34,27 +34,9 @@
 }
 ```
 
-## Updates/News:
-
-🚩 **News** (Aug. 2024): Time-LLM has been adopted by XiMou Optimization Technology Co., Ltd. (XMO) for Solar, Wind, and Weather Forecasting.
-
-🚩 **News** (May 2024): Time-LLM has been included in [NeuralForecast](https://github.com/Nixtla/neuralforecast). Special thanks to the contributor @[JQGoh](https://github.com/JQGoh) and @[marcopeix](https://github.com/marcopeix)!
-
-🚩 **News** (March 2024): Time-LLM has been upgraded to serve as a general framework for repurposing a wide range of language models to time series forecasting. It now defaults to supporting Llama-7B and includes compatibility with two additional smaller PLMs (GPT-2 and BERT). Simply adjust `--llm_model` and `--llm_dim` to switch backbones.
-
 ## Introduction
-Time-LLM is a reprogramming framework to repurpose LLMs for general time series forecasting with the backbone language models kept intact.
-Notably, we show that time series analysis (e.g., forecasting) can be cast as yet another "language task" that can be effectively tackled by an off-the-shelf LLM.
+ Propulsion, a  parameter efficient fine-tuning (PEFT) method designed to optimize task-specific performance while drastically reducing computational overhead
 
-<p align="center">
-<img src="./figures/framework.png" height = "360" alt="" align=center />
-</p>
-
-- Time-LLM comprises two key components: (1) reprogramming the input time series into text prototype representations that are more natural for the LLM, and (2) augmenting the input context with declarative prompts (e.g., domain expert knowledge and task instructions) to guide LLM reasoning.
-
-<p align="center">
-<img src="./figures/method-detailed-illustration.png" height = "190" alt="" align=center />
-</p>
 
 ## Requirements
 Use python 3.11 from MiniConda
