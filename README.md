@@ -15,7 +15,7 @@
 
 <p align="center">
 
-<img src="./figures/propulsion_compare.png" width="670">
+<img src="./figures/propulsion_compare.png" width="770">
 
 </p>
 
@@ -37,7 +37,11 @@
 ## Introduction
  Propulsion, a  parameter-efficient fine-tuning (PEFT) method designed to optimize task-specific performance while drastically reducing computational overhead
 
+<p align="center">
 
+<img src="./figures/propulsion_method.png" width="770">
+
+</p>
 ## Requirements
 Use python 3.11 from MiniConda
 
