@@ -42,6 +42,7 @@
 <img src="./figures/propulsion_method.png" width="270">
 
 </p>
+
 ## Requirements
 Use python 3.11 from MiniConda
 
