@@ -7,6 +7,15 @@
 
 <div align="center">
 
+![](https://img.shields.io/github/last-commit/Kowsher/Propulsion?color=green)
+![](https://img.shields.io/github/stars/Kowsher/Propulsion?color=yellow)
+![](https://img.shields.io/github/forks/Kowsher/Propulsion?color=lightblue)
+![](https://img.shields.io/badge/PRs-Welcome-green)
+
+</div>
+
+<div align="center">
+
 **[<a href="https://arxiv.org/abs/2409.10927">Paper</a>]**
 **[<a href="https://github.com/Kowsher/Propulsion">Code</a>]**
 
