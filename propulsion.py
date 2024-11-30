@@ -5,7 +5,7 @@ from transformers.activations import ACT2FN
 
 # Define the custom linear layer
 class PropulsionLinear(nn.Module):
-    def __init__(self, input_features, output_features, bias=True, degree=15, **kwargs):
+    def __init__(self, input_features, output_features, bias=False, degree=15, **kwargs):
         super(PropulsionLinear, self).__init__()
         # Initialize the underlying nn.Linear with both the specified arguments and any additional kwargs
         self.linear = nn.Linear(input_features, output_features, bias=bias, **kwargs)
